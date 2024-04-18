@@ -1,0 +1,47 @@
+$custom-colors: (
+    "bluish-purple":#6247ea,
+    "indian-yellow":#ec9d5f,
+    "blue-harcoal":#04091e,
+    "soft-peach":#eee,
+    "milk-white":#fafcff
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$h12-font-size: $font-size-base * 0.75;
+$h14-font-size: $font-size-base * 0.90;
+$h20-font-size: $font-size-base * 1.25;
+$h36-font-size: $font-size-base * 2.25;
+$custom-sizes: (
+  12: $h12-font-size,
+  14: $h14-font-size,
+  20: $h14-font-size,
+  36: $h36-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custom-sizes);
+
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  20: $spacer * 1.25,
+  30: $spacer * 1.9,
+  40: $spacer * 2.5,
+  60: $spacer * 3.75,
+  120: $spacer * 7.5,
+  225: $spacer * 10
+);
+
+$position-values: (
+  0: 0,
+  25: 25%,
+  37: 37%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  100: 100%
+);
