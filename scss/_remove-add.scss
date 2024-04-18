@@ -21,7 +21,7 @@ $custom-sizes: (
 $font-sizes: map-merge($font-sizes, $custom-sizes);
 
 
-$spacers: (
+$custom-spacers: (
   20: $spacer * 1.25,
   30: $spacer * 1.9,
   40: $spacer * 2.5,
@@ -32,11 +32,11 @@ $spacers: (
 $spacers: map-merge($spacers, $custom-spacers);
 
 
-$position-values: (
+$custom-position-values: (
   37: 37%,
   60: 60%
 );
-$position-values: map-merge($position-values, $custom-spacers);
+$position-values: map-merge($position-values, $custom-position-values);
 
 // $grid-breakpoints: (
 //   xs: 0,
