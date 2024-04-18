@@ -22,12 +22,6 @@ $font-sizes: map-merge($font-sizes, $custom-sizes);
 
 
 $spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
   20: $spacer * 1.25,
   30: $spacer * 1.9,
   40: $spacer * 2.5,
@@ -35,13 +29,28 @@ $spacers: (
   120: $spacer * 7.5,
   225: $spacer * 10
 );
+$spacers: map-merge($spacers, $custom-spacers);
+
 
 $position-values: (
-  0: 0,
-  25: 25%,
   37: 37%,
-  50: 50%,
-  60: 60%,
-  75: 75%,
-  100: 100%
+  60: 60%
 );
+$position-values: map-merge($position-values, $custom-spacers);
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+//   3xl: 1620px
+// );
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   3xl: 1650px, 
+// );
